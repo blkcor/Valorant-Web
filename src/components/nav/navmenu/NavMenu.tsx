@@ -4,6 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link, useLocation } from 'react-router-dom';
+import { ListItemText } from '@mui/material';
 
 
 const options: { [key: string]: string } = {
@@ -15,10 +16,10 @@ const options: { [key: string]: string } = {
 const ITEM_HEIGHT = 48;
 
 type NavMenuProps = {
-  
+
 };
 
-const NavMenu:React.FC<NavMenuProps> = () => {
+const NavMenu: React.FC<NavMenuProps> = () => {
   const location = useLocation().pathname.split("/")[1]
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -58,9 +59,11 @@ const NavMenu:React.FC<NavMenuProps> = () => {
       >
         {Object.keys(options).map((option) => (
           <MenuItem key={option} selected={option === location}>
-            <Link className='decoration-none text-black' to={`/${option}`}>
-              {options[option]}
-            </Link>
+            <ListItemText>
+              <Link className='decoration-none text-black' to={`/${option}`}>
+                {options[option]}
+              </Link>
+            </ListItemText>
           </MenuItem>
         ))}
       </Menu>

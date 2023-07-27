@@ -15,10 +15,14 @@
     "@mui/icons-material": "^5.14.1",
     "@mui/material": "^5.14.1",
     "@unocss/preset-icons": "^0.53.6",
+    "deck.gl": "^8.9.22",
     "jotai": "^2.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2"
+    "react-router-dom": "^6.14.2",
+    "@types/leaflet": "^1.9.3",
+    "leaflet": "^1.9.4",
+"react-leaflet": "^4.2.1"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.93",
