@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import TextImage from '../../textImage/TextImage';
-
+import axios from 'axios'
 type MapsProps = {
-
+  cover: string,
+  text: string
 };
 
-const Maps: React.FC<MapsProps> = () => {
+
+interface Map {
+  text: string,
+  url: string,
+  cover: string
+}
+
+
+const Maps: React.FC<MapsProps> = ({ cover, text }) => {
 
   return (
     <div className='flex flex-2/3'>
-      <TextImage img='/map/bind.jpg' text='源工重镇' />
+      <TextImage img={cover} text={text} />
     </div>
   )
 }

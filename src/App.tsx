@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/home/Home'
 import News from './pages/news/News'
 import Discuss from './pages/discuss/Discuss'
-import Layout from './layout/layout'
+import Layout from './layout/Layout'
 function App() {
   const router = createBrowserRouter([
     {

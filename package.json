@@ -14,15 +14,16 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.1",
     "@mui/material": "^5.14.1",
+    "@types/leaflet": "^1.9.3",
     "@unocss/preset-icons": "^0.53.6",
+    "axios": "^1.4.0",
     "deck.gl": "^8.9.22",
     "jotai": "^2.2.2",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2",
-    "@types/leaflet": "^1.9.3",
-    "leaflet": "^1.9.4",
-"react-leaflet": "^4.2.1"
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.14.2"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.93",
